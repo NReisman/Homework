@@ -1,0 +1,56 @@
+html{
+   background-color:darkkhaki;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header{
+    color:white;
+    text-align: center;
+    font-style:oblique;
+    font-weight: bold;
+    border: 6px groove black;
+    border-radius: 12px;
+    margin: 2em; 
+}
+
+body{
+    max-width: 500px;
+    width: 70%;
+    margin: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color:darkred;
+}
+
+a:hover{
+    color:black;
+}
+
+.tag-line{
+    text-shadow: 2px 2px white;
+
+}
+
+#page-title{
+    color:darkred;
+    text-shadow: 2px 2px white;
+    text-transform: uppercase;
+
+}
+
+.link-list{
+    text-shadow: 2px 2px white;
+}
+.link-list,.link-list li{
+    display: inline;
+    padding: 0;
+    
+}
+
