@@ -1,0 +1,74 @@
+html{
+   background-color:darkkhaki;
+   background: rgb(2,0,36);
+   font-family: newFont;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,85,9,1) 15%, rgba(0,212,255,1) 100%);
+}
+
+header{
+    color:white;
+    text-align: center;
+    font-style:oblique;
+    font-weight: bold;
+    border: 6px groove black;
+    border-radius: 12px;
+    border-style: outset;
+    margin: 2em; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ 
+    
+}
+
+video{
+    width:20em;
+    float:top;
+    position:fixed;
+
+}
+
+audio {
+    padding-left:34em;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color:darkred;
+}
+
+a:hover{
+    color:black;
+}
+
+.tag-line{
+    text-shadow: 2px 2px white;
+
+}
+
+#page-title{
+    color:darkred;
+    text-shadow: 2px 2px white;
+    text-transform: uppercase;
+
+}
+
+.link-list{
+    text-shadow: 2px 2px white;
+}
+.link-list,.link-list li{
+    display: inline;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'newFont';
+    src: url(Fonts/BlueElfiraRegular.ttf);
+}
+
+
