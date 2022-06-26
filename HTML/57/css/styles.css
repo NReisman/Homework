@@ -1,0 +1,140 @@
+html{
+   background-color:darkkhaki;
+   background: rgb(2,0,36);
+   font-family: newFont;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,85,9,1) 15%, rgba(0,212,255,1) 100%);
+}
+
+nav *{
+    border: 2px greenyellow;
+    
+ }
+ 
+header{
+    color:white;
+    text-align: center;
+    font-style:oblique;
+    font-weight: bold;
+    border: 6px groove black;
+    border-radius: 12px;
+    border-style: outset;
+    margin: 2em; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ 
+    
+}
+
+video{
+    width:20em;
+    position:fixed;
+    padding:5em;
+    margin-left:20em;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color:darkred;
+}
+
+a:hover{
+    color:black;
+}
+
+.tag-line{
+    text-shadow: 2px 2px white;
+
+}
+
+#page-title{
+    color:darkred;
+    text-shadow: 2px 2px white;
+    text-transform: uppercase;
+
+}
+
+.link-list{
+    text-shadow: 2px 2px white;
+}
+.link-list,.link-list li{
+    display: inline;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'newFont';
+    src: url(Fonts/BlueElfiraRegular.ttf);
+}
+
+.top{
+    position:absolute;
+    bottom:0;
+    background-color: black;
+    margin-left:20em;
+}
+body{
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+td,th {
+   
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1em;
+    text-align: center;
+  }
+  tbody tr:nth-child(2n-1){
+    background-color: lightblue;
+  }
+
+  tbody td:nth-child(5n-4){
+    font-weight: bold;
+  }
+  thead tr th:nth-child(5n), tbody td:nth-child(5n){
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+caption {
+    color: lightblue;
+  }
+
+  
+  input, textarea {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    margin:auto;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+@media screen and (max-width=799px){
+    h2{
+        width:30%;
+    }
+}
+
+@media screen and (min-width=800px){
+    h2{
+        width:100%;
+    }
+}
+
+ 
+    
