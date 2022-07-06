@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 2em;
+        display: grid;
+        gap: 2em;
+        text-decoration:none;
+        grid-template-areas: "header"
+                             "sidebar"
+                             "main"
+                             "footer";
+      }
+
+      header{
+        
+        grid-area: header;
+      }
+
+      aside{
+        grid-area: sidebar;
+      }
+
+      article{
+        grid-area: main;
+      }
+
+      footer{
+        grid-area: footer;
+      }
+
+      @media screen and (min-width:600px){
+        header{
+        display: flex;
+        margin:auto;
+        justify-content: space-evenly;
+        padding: 3em;
+
+        
+    
+        }
+        body{
+            grid-template-columns:1fr 2fr 1fr;
+            grid-template-areas: "header header header"
+                                "sidebar main main"
+                                "footer footer footer";
+        }
+
+      }
+
+</style>
+<body>
+    <header>
+    <h1>Gmail</h1>
+    <input name="search" id="search" placeholder="Search Here"></input>
+    <div><button>My Profile</button></div>
+    </header>
+
+    <aside><button>COMPOSE</button></aside>
+    <article>
+        <div>MY EMAILS</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat illo nesciunt minima! Impedit enim saepe earum voluptates quod hic in harum dolorem modi veritatis?</div>
+
+    </article>
+
+    <footer>
+        <div>12.4gb/ 15gb remaining</div>
+    </footer>
+</body>
+</html>
