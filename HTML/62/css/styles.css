@@ -1,0 +1,220 @@
+html{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+.heading, .products, .form,.financials,.aboutUs{
+
+  margin-left:10%;
+  margin-right:10%;
+
+}
+
+ul {
+   display:flex;
+
+    margin-top:0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ;
+  }
+  
+  li {
+    text-align: left;
+    align-items: flex-start;
+}
+  
+  li a {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  }
+ 
+ .header1{
+  margin-left:5%;
+  
+ }
+  li a:hover {
+    color:red;
+    text-decoration: underline;
+  }
+footer{
+  color:white;
+  background-color: black;
+  
+    text-decoration: none;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    
+}
+footer p{
+  margin-left:10%;
+  padding-bottom:3px;
+}
+
+header{
+  padding-top:20px;
+  top:0;
+
+}
+.heading{
+  background-color: lightgray;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 1%;
+  
+}
+.heading h1{
+    text-transform: uppercase;
+  
+}
+#grid{
+    display:grid;
+    grid-template-columns: 350px 3px 350px 3px 350px;
+    grid-template-rows: 4em 175px 4em;
+
+}
+#item1{
+  grid-column: 1/2;
+  grid-row: 1/1;
+  text-align: center;
+
+}
+#item2{
+  grid-row: 1/1;
+  grid-column: 3/4;
+  text-align:center;
+}
+#item3{
+  grid-row: 1/1;
+  grid-column: 5/6;
+  text-align:center;
+
+}
+#img1{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  object-fit: contain;
+}
+#vid2{
+  grid-row: 2/3;
+  grid-column: 3/4;
+  object-fit: contain;
+
+ 
+}
+#img3{
+  grid-row: 2/3;
+  grid-column: 5/6;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+#txt1{
+  grid-row:3/4;
+  grid-column:1/2;
+  justify-content: center;
+}
+#txt2{
+  grid-row:3/4;
+  grid-column:3/4;
+  justify-content: center;
+
+}
+#txt3{
+  grid-row:3/4;
+  grid-column:5/6;
+  justify-content: center;
+
+}
+#vl1 {
+  border-left: 1px solid gray;
+  height: 300px;
+  left: 50%;
+  margin-left: 2px;
+  top: 0;
+}
+#vl2 {
+  border-left: 1px solid gray;
+  height: 300px;
+  left: 50%;
+  margin-left: 2px;
+
+  top: 0;
+}
+@media screen and (max-width:1000px) {
+  #grid{
+    display:block;
+    
+}
+#vl1,#vl2{
+  border-left:0px;
+  height:0;
+}
+  
+}
+.form{
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1%;
+    
+}
+@media screen and (max-width:1000px) {
+    .name, .email, .submit{
+        display:block;
+        padding:2px;
+    }      
+    
+}
+#name, #email{
+    box-shadow: 2px 2px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+#submit{
+    border-color: lightgray;
+}
+table{
+ overflow-x:auto;
+}
+table, th, td {
+    border: 2px black solid;
+    border-collapse: collapse;
+    margin: auto;
+   
+  }
+tbody, tfoot{
+    text-align: right;
+}
+td:first-child {
+    font-weight: bold
+  }
+td:nth-child(6){
+    color: red;
+  }
+tfoot td:last-child{
+    color:red;
+}
+  .odd{
+    background-color: lightgray;
+  }
+tr:hover{
+    background-color: lightblue;
+}
+
