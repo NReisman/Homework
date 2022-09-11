@@ -23,3 +23,5 @@ const array2 = myMap(array1,myFunction);
 console.log(`original array: ${array1}`);
 console.log(`new array: ${array2}`);
 }());
+
+// SL - nice but indentation isnt consistent making it hard to read

@@ -9,3 +9,5 @@ counter2.increment(15);
 console.log(window.app.counter.print());
 counter1.print();
 counter2.print();
+
+// SL - grade - 95
