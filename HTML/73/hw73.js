@@ -9,7 +9,7 @@
     const okbutton =  document.getElementById('okBtn');
 
     okbutton.addEventListener('click', () => {
-        messageBox.style.display = 'none';
+        okbutton.remove();
       });
     
 
