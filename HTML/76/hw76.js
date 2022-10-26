@@ -20,14 +20,6 @@ window.app.pcsTools = (function () {
     elem.addEventListener(type, callback);
   }
 
-  function changeColor(elem,property){
-    let a = Math.floor(Math.random() * 255); 
-    let b = Math.floor(Math.random() * 255); 
-    let c = Math.floor(Math.random() * 255);              
-    elem.style[property] = "rgb(" + a + "," + b + "," + c +")";
-    
-
-}
 
   return {
     wrap: function (selector) {
@@ -57,9 +49,12 @@ window.app.pcsTools = (function () {
           return this;
         },
         //hmwk
-        colorChange: function(time){
-            changeColor('color');
-            setInterval(changeColor, time);
+        colorChange: function(value){
+          let a = Math.floor(Math.random() * 255); 
+          let b = Math.floor(Math.random() * 255); 
+          let c = Math.floor(Math.random() * 255);
+            this.css('color',value);
+            value = "rgb(" + a + "," + b + "," + c +")";
             return this;
         }
         
