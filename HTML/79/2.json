@@ -1,0 +1,10 @@
+{
+    "name": "fish",
+    "ingredients": [
+        "roll",
+        "water",
+        "salt",
+        "pepper"
+    ],
+    "photo": "photos/fish.jpg"
+}
