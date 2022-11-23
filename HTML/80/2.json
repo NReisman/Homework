@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {
   "title": "ivri",
   "url": "ivri.mp4",
   "picture": "ivrithumbnail.jpg"
+=======
+{
+  "title": "ivri",
+  "url": "ivri.mp4",
+  "picture": "ivrithumbnail.jpg"
+>>>>>>> 78c2f507724029828f3b83804ccea56a2e68ac79
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  // jshint -W119
  // jshint -W117
 (async function () {
@@ -94,3 +95,23 @@
 }());
 
 
+=======
+/*global $ */
+(function () {
+"use strict";
+$(#challah).click(function () {
+    var jsonURL = "recipes.json";
+    $.getJSON(jsonURL, function (json) 
+    {
+      var imgList= "";
+  
+      $.each(json.recipes, function () {
+        imgList += '<li><img src= "' + this.photo + '"></li>';
+      });
+  
+     $('#recipe').append(imgList);
+    });
+  });
+})();
+  
+>>>>>>> 78c2f507724029828f3b83804ccea56a2e68ac79

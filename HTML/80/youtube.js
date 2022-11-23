@@ -1,5 +1,9 @@
 // jshint -W119
 // jshint -W117
+<<<<<<< HEAD
+=======
+// jshint -W104
+>>>>>>> 78c2f507724029828f3b83804ccea56a2e68ac79
 (async function () {
   'use strict';
 
@@ -62,4 +66,8 @@
 
 
 
+<<<<<<< HEAD
 }());
+=======
+}());
+>>>>>>> 78c2f507724029828f3b83804ccea56a2e68ac79

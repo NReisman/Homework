@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "title": "Yesh Tikva",
@@ -7,4 +8,15 @@
     "title": "Ivri",
     "id": 2
   }
+=======
+[
+  {
+    "title": "Yesh Tikva",
+    "id": 1
+  },
+  {
+    "title": "Ivri",
+    "id": 2
+  }
+>>>>>>> 78c2f507724029828f3b83804ccea56a2e68ac79
 ]
