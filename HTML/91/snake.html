@@ -16,29 +16,17 @@
 
     #theCanvas {
       display: block;
-    }
-
-    #addAnt {
-      position: absolute;
-      top: 10px;
-      left: 10px;
+      border: 1px solid black;
     }
   </style>
 </head>
 
 <body>
+  <!--img src="images/snakehead.png"-->
+  <audio id="crash" src="media/crash.mp3"></audio>
+  <audio id="crunch" src="media/crunch.mp3"></audio>
   <canvas id="theCanvas"></canvas>
-  <form id="addAnt">
-    <label>amount
-      <input type="number" id="amount" min="1" max="10000" require step="1" value="1">
-    </label>
-    <label>color
-      <input type="color" id="color">
-    </label>
-    <button>add ant</button>
-  </form>
-
-  <script src="ants.js"></script>
+  <script src="snake2.js"></script>
 </body>
 
 </html>

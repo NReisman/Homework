@@ -29,7 +29,11 @@
 
     move() {
       this.x += Ant.getRandomNumber(-1, 5);
-      this.y += Ant.getRandomNumber(-1, 5);
+      this.y += Ant.getRandomNumber(-1, 1);
+      if (this.x > theCanvas.width - Ant.ANT_SIZE) {
+        this.x = theCanvas.width - Ant.ANT_SIZE;
+      }
+     
       this.draw();
     }
 
