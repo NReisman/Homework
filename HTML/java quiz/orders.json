@@ -1,0 +1,29 @@
+[
+    {
+        "customer": "Donald",
+        "address": "111 Main Street",
+        "items": [
+            {
+                "item": "donut",
+                "quantity": 8,
+                "total": 20
+            },
+            {
+                "item": "latke",
+                "quantity": 25,
+                "total": 31.25
+            }
+        ]
+    },
+    {
+        "customer": "Elon",
+        "address": "689 Cherry Street",
+        "items": [
+            {
+                "item": "cake",
+                "quantity": 6,
+                "total": 61.50
+            }
+        ]
+    }
+]
