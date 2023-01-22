@@ -1,0 +1,8 @@
+html{
+    text-align: center;
+}
+
+.bulletless {
+  list-style: none;
+  padding: 0;
+}
