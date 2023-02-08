@@ -67,7 +67,7 @@ function displaySelectedBlog(blogName) {
     document.getElementById("selectedBlog").style = "display:visible";
 
     let blog = '';
-    blog += '<button onclick="backBtn()" id="back" class="back">Back</button>' + '<br>' + '<br>';
+    blog += '<button onclick="backBtn()" id="back" class="btn btn-outline-primary back">Back</button>' + '<br>' + '<br>';
     blog += '<h2>Posts:</h2>';
     let myNum = Number(blogName);
     Loop:
