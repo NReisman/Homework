@@ -9,24 +9,34 @@ let users;
 let postsData;
 let commentsData;
 
-fetch(userLink)
-    .then(response => response.json())
-    .then(data => {
-        users = data;
-        return fetch(postsLink);
-    })
-    .then(response => response.json())
-    .then(data => {
-        postsData = data;
-        return fetch(commentsLink);
-    })
-    .then(response => response.json())
-    .then(data => {
-        commentsData = data;
-        // Display the initial list of blogs
-        displayUsers(users);
-    });
 
+async function fetchData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+}
+
+async function main() {
+    const urls = [
+        userLink,
+        postsLink,
+        commentsLink
+    ];
+
+    const promises = urls.map(url => fetchData(url));
+    const results = await Promise.all(promises);
+
+    const [data1, data2, data3] = results;
+    users = data1;
+    postsData = data2;
+    commentsData = data3;
+
+    displayUsers(users);
+
+    return results;
+}
+
+main();
 function displayUsers(data) {
 
     const blogList = document.getElementById('blogList');
@@ -63,8 +73,8 @@ function displaySelectedBlog(blogName) {
     Loop:
     for (let i = myNum; i < postsData.length; i++) {
         if (postsData[i].userId !== myNum) continue Loop;
-        blog += '<p>' + postsData[i - 1].title + '</p>';
-        blog += '<button onclick="btnFunction(\'' + i + '\')" id=\'' + i + '\'>' + "Show Comments" + '</button>' + '<br>';
+        blog += '<div class="posts"><p>' + postsData[i - 1].title + '</p></div>';
+        blog += '<div class="posts"><button onclick="btnFunction(\'' + i + '\')" id=\'' + i + '\'>' + "Show Comments" + '</button></div>';
         // addBtnClass();
     }
 
@@ -84,13 +94,13 @@ function btnFunction(postIdNum) {
 
         let postComment = '';
         let myNumCom = Number(postIdNum);
-        postComment += '<h1>' + "Comments:" + '</h1>';
+        postComment += '<div class="commentHeader"><h1>' + "Comments:" + '</h1></div>';
 
         Loop:
         for (let i = 0; i < commentsData.length; i++) {
             if (commentsData[i].postId !== myNumCom) continue Loop;
 
-            postComment += '<p>' + commentsData[i].name + '</p>';
+            postComment += '<div class="commentClass"><p>' + commentsData[i].name + '</p></div>';
             selectedPost.innerHTML = postComment;
 
         }

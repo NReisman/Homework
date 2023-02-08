@@ -4,16 +4,39 @@
     margin: none;
 }
 
-
-
 .blogList {
+    margin-top: 10px;
+    margin-right: 10em;
+    margin-left: 10em;
     display: flex;
     height: 400px;
     align-content: space-between;
     flex-direction: column;
-    margin-left: 20px;
 
 }
+
+.posts {
+    width: 50em;
+}
+
+.commentClass,
+.commentHeader {
+    margin-left: 60em;
+    margin-right: 10em;
+    width: 15em;
+    position: relative;
+    bottom: 40em;
+}
+
+.commentClass{
+    background-color: lightskyblue
+}
+
+.selectedBlog {
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
 
 .material-icons {
     font-size: 36px;
@@ -21,13 +44,12 @@
     vertical-align: middle;
 }
 
-.selectedBlog {
+/* .selectedBlog {
     float: left;
     width: 50%;
-    margin-left: 20px;
 
 
-}
+} */
 
 body {
     font-family: Georgia, serif;
