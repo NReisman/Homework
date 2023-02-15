@@ -1,0 +1,10 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
