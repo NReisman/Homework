@@ -1,0 +1,25 @@
+<!--link href="/stylesheets/contact.css" rel="stylesheet"/-->
+
+<form method="POST">
+  <div class="formgroup">
+    <label for="first">first:</label>
+    <input name="first" required value="{{#contact}}{{contact.first}}{{/contact}}">
+  </div>
+  <div class="formgroup">
+    <label for="last">last:</label>
+    <input name="last" required value="{{#contact}}{{contact.last}}{{/contact}}">
+  </div>
+  <div class="formgroup">
+    <label for="email">email:</label>
+    <input name="email" type="email" value="{{#contact}}{{contact.email}}{{/contact}}">
+  </div>
+  <div class="formgroup">
+    <label for="phone">phone:</label>
+    <input name="phone" value="{{#contact}}{{contact.phone}}{{/contact}}">
+  </div>
+  <div class="buttons">
+    <button class="btn">save</button>
+    <button class="btn" type="reset">reset</button>
+    <a class="btn" href="/contacts">cancel</a>
+  </div>
+</form>
