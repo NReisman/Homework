@@ -4,11 +4,13 @@ const BlogList = ({ onBlogSelect }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
+      // SL - what if something goes wrong? Also nothing wrong with .then but async await is much nore common nowadays
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(data => setBlogs(data));
     }, []);
 
+    // SL - better then blog jsx here would be to create a component
     return (
         <ul>
             {blogs.map(blog => (

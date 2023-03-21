@@ -25,3 +25,5 @@ const App = () => {
 };
 
 export default App;
+
+// SL - nice! but not enough components. Your components do too much - which I think makes the code more dififcult to write, debug, and maintain

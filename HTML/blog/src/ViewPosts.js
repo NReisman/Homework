@@ -1,9 +1,12 @@
+// SL - ViewPosts? We usually name things by what they are, not what they do.
 import React, { useState, useEffect } from 'react';
 
 const ViewPosts = ({ blogId }) => {
     const [posts, setPosts] = useState([]);
     const [comments, setComments] = useState({});
     const [showComments, setShowComments] = useState({});
+
+    console.log(showComments);
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts?userId=${blogId}`)
@@ -21,6 +24,8 @@ const ViewPosts = ({ blogId }) => {
         setShowComments({ ...showComments, [postId]: !showComments[postId] });
     };
 
+    // SL - Rather then doing all this work in here, better would be sub components. Each post can be a post - and it would handle its comments. To much work going on here
+    // and thats why you need ids for the true, false of showComments - since your doing everything here, need to know which posts are showing. If post would be a component, and handle it itself, would just be a simple true/false.
     return (
         <div>
             {posts.map(post => (
